@@ -1,0 +1,1 @@
+# moviedb-architecture-component
