@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="MovieDetailTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">#2E2E2E</item>
+        <!--<item name="android:windowEnterTransition">@transition/slide_bottom</item>-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+    </style>
+</resources>

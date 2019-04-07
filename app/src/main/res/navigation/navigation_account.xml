@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_account"
+    app:startDestination="@id/account_fragment">
+
+    <fragment
+        android:id="@+id/account_fragment"
+        android:name="com.example.sunmoviedb.ui.account.AccountFragment"
+        android:label="@string/account_label"
+        tools:layout="@layout/fragment_account">
+
+        <action
+            android:id="@+id/action_account_to_setting"
+            app:destination="@id/setting_activity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/setting_activity"
+        android:name="com.example.sunmoviedb.SettingActivity"
+        android:label="@string/setting_label"
+        tools:layout="@layout/activity_setting" />
+</navigation>

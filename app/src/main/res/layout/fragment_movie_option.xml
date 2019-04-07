@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.sunmoviedb.ui.movieoption.MovieOptionViewModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/color_mine_shaft">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_32">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/poster_image"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginStart="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_24"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_launcher_background" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginEnd="@dimen/dp_24"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:textColor="@color/color_silver_sand"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/poster_image"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Mary poppins returns" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/release_date_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginEnd="@dimen/dp_24"
+                android:textColor="@color/color_silver_sand"
+                android:textSize="@dimen/sp_13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/poster_image"
+                app:layout_constraintTop_toBottomOf="@id/title_text"
+                tools:text="This is awesome movie This is awesome movie This is awesome movie" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/dp_24"
+                android:background="@color/color_silver_sand"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/poster_image" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/like_image"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_32"
+                android:layout_marginTop="@dimen/dp_32"
+                android:src="@drawable/ic_thumb_up_white_24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:text="@string/movie_option_like_like"
+                android:textColor="@color/color_silver_sand"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/like_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/like_image"
+                app:layout_constraintTop_toTopOf="@id/like_image" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/unlike_image"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_32"
+                android:layout_marginTop="@dimen/dp_32"
+                android:src="@drawable/ic_thumb_down_white_24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/like_image" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:text="@string/movie_option_unlike_like"
+                android:textColor="@color/color_silver_sand"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/unlike_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/unlike_image"
+                app:layout_constraintTop_toTopOf="@id/unlike_image" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/watchlist_text"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_32"
+                android:layout_marginTop="@dimen/dp_32"
+                android:src="@drawable/ic_playlist_add_check_white_24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/unlike_image" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:text="@string/add_to_watchlist_text"
+                android:textColor="@color/color_silver_sand"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/watchlist_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/watchlist_text"
+                app:layout_constraintTop_toTopOf="@id/watchlist_text" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="pref_use_caption_key"
+        android:title="@string/use_caption_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceCategory
+        android:title="@string/standard_option_title"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:defaultValue="@string/default_caption_language_value"
+            android:entries="@array/caption_language_entries"
+            android:entryValues="@array/caption_language_entry_values"
+            android:key="pref_caption_language_key"
+            android:title="@string/caption_language_title"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:defaultValue="@string/normal_text_value"
+            android:entries="@array/caption_text_size_entries"
+            android:entryValues="@array/caption_text_size_entry_values"
+            android:key="pref_caption_text_size_key"
+            android:title="@string/caption_text_size_title"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

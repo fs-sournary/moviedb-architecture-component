@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.example.sunmoviedb.data.DiscoverMovie" />
+
+        <variable
+            name="listener"
+            type="com.example.sunmoviedb.ui.home.DiscoverMovieListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/thumbnail_image"
+            android:layout_width="@dimen/dp_112"
+            android:layout_height="@dimen/dp_112"
+            android:onClick="@{(v) -> listener.onItemClicked(v, item.id)}"
+            android:onLongClick="@{() -> listener.onItemLongClicked(item)}"
+            android:scaleType="centerCrop"
+            app:urlImage="@{item.posterPath}"
+            tools:src="@drawable/ic_launcher_background" />
+    </LinearLayout>
+</layout>

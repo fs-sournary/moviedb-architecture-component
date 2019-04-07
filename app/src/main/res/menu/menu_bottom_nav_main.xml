@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:title="@string/home_label"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_library"
+        android:icon="@drawable/ic_library_music_black_24dp"
+        android:title="@string/library_label"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_watched_list"
+        android:icon="@drawable/ic_playlist_add_check_black_24dp"
+        android:title="@string/watched_list_label"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/account_label"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_home"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.example.sunmoviedb.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_setting"
+            app:destination="@id/setting_activity" />
+
+        <action
+            android:id="@+id/action_home_to_movie_detail"
+            app:destination="@id/movie_detail_activity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/setting_activity"
+        android:name="com.example.sunmoviedb.SettingActivity"
+        android:label="@string/setting_label"
+        tools:layout="@layout/activity_setting" />
+
+    <activity
+        android:id="@+id/movie_detail_activity"
+        android:name="com.example.sunmoviedb.MovieDetailActivity"
+        android:label="@string/movie_detail_activity_label"
+        tools:layout="@layout/activity_movie_detail">
+
+        <argument
+            android:name="movie_id"
+            app:argType="integer" />
+    </activity>
+</navigation>

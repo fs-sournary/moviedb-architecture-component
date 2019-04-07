@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_watched_list"
+    app:startDestination="@id/watched_list_fragment">
+
+    <fragment
+        android:id="@+id/watched_list_fragment"
+        android:name="com.example.sunmoviedb.ui.watchedlist.WatchedListFragment"
+        android:label="Watched list"
+        tools:layout="@layout/fragment_watched_list">
+
+        <action
+            android:id="@+id/action_watched_list_to_setting"
+            app:destination="@id/setting_activity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/setting_activity"
+        android:name="com.example.sunmoviedb.SettingActivity"
+        android:label="@string/setting_label"
+        tools:layout="@layout/activity_setting" />
+
+    <activity
+        android:id="@+id/movie_detail_activity"
+        android:name="com.example.sunmoviedb.MovieDetailActivity"
+        android:label="@string/movie_detail_activity_label"
+        tools:layout="@layout/activity_movie_detail" />
+</navigation>

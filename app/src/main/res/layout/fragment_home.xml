@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.example.sunmoviedb.ui.home.HomeViewModel" />
+    </data>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/most_popular_movie_layout"
+                layout="@layout/layout_home_category_movie"
+                android:visibility="@{viewModel.isPopularMovies ? View.VISIBLE : View.GONE}"
+                app:subtitle="@{@string/most_popular_movie_subtitle}"
+                app:title="@{@string/most_popular_movie_title}" />
+
+            <include
+                android:id="@+id/genre_movie_layout"
+                layout="@layout/layout_home_genre_movie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/most_popular_movie_layout"
+                app:subtitle="@{@string/genre_movie_subtitle}"
+                app:title="@{@string/genre_movie_title}" />
+
+            <include
+                android:id="@+id/now_playing_movie_layout"
+                layout="@layout/layout_home_category_movie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/genre_movie_layout"
+                app:subtitle="@{@string/now_playing_subtitle}"
+                app:title="@{@string/now_playing_title}" />
+
+            <include
+                android:id="@+id/top_rated_movie_layout"
+                layout="@layout/layout_home_category_movie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/now_playing_movie_layout"
+                app:subtitle="@{@string/top_rate_subtitle}"
+                app:title="@{@string/top_rate_title}" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

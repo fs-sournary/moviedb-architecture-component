@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Setting fragment -->
+    <string-array name="audio_language_entries">
+        <item>@string/origin_language_label</item>
+        <item>@string/english_language_label</item>
+    </string-array>
+    <string-array name="audio_language_entry_values">
+        <item>@string/origin_language_value</item>
+        <item>@string/english_language_value</item>
+    </string-array>
+    <string-array name="network_entries">
+        <item>@string/wifi_network_label</item>
+        <item>@string/any_network_label</item>
+    </string-array>
+    <string-array name="network_entry_values">
+        <item>@string/wifi_network_value</item>
+        <item>@string/any_network_value</item>
+    </string-array>
+    <string-array name="quality_entries">
+        <item>@string/hd_quality_label</item>
+        <item>@string/sd_quality_label</item>
+    </string-array>
+    <string-array name="quality_entry_values">
+        <item>@string/hd_quality_value</item>
+        <item>@string/sd_quality_value</item>
+    </string-array>
+
+    <!-- Caption setting fragment -->
+    <string-array name="caption_language_entries">
+        <item>@string/default_caption_language_label</item>
+        <item>@string/english_caption_language_label</item>
+        <item>@string/vietnam_caption_language_label</item>
+    </string-array>
+    <string-array name="caption_language_entry_values">
+        <item>@string/default_caption_language_value</item>
+        <item>@string/english_caption_language_value</item>
+        <item>@string/vietnam_caption_language_value</item>
+    </string-array>
+    <string-array name="caption_text_size_entries">
+        <item>@string/very_small_text_label</item>
+        <item>@string/small_text_label</item>
+        <item>@string/normal_text_label</item>
+        <item>@string/large_text_label</item>
+        <item>@string/very_large_text_label</item>
+    </string-array>
+    <string-array name="caption_text_size_entry_values">
+        <item>@string/very_small_text_value</item>
+        <item>@string/small_text_value</item>
+        <item>@string/normal_text_value</item>
+        <item>@string/large_text_value</item>
+        <item>@string/very_large_text_value</item>
+    </string-array>
+</resources>

@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">SunMovieDb</string>
+
+    <!-- Main activity -->
+    <string name="open_drawer_label">Open drawer</string>
+    <string name="close_drawer_label">Close drawer</string>
+
+    <!-- Home fragment -->
+    <string name="home_label">Home</string>
+    <string name="home_action_label"><![CDATA[
+        Sun app <font color=\'red'>Movie &amp; TV</font>
+    ]]></string>
+    <string name="most_popular_movie_title">Most popular</string>
+    <string name="most_popular_movie_subtitle">Top-sellers &amp; hot flicks</string>
+    <string name="genre_movie_title">What are you in the mood for ?</string>
+    <string name="genre_movie_subtitle">Browse by genre and discover something now</string>
+    <string name="now_playing_title">Now playing</string>
+    <string name="now_playing_subtitle">Watch the playing movies</string>
+    <string name="top_rate_title">Top rate</string>
+    <string name="top_rate_subtitle">Enjoy the best movies</string>
+
+    <!-- library fragment -->
+    <string name="library_label">Library</string>
+
+    <!-- Watched list fragment -->
+    <string name="watched_list_label">Watched list</string>
+
+    <!-- Account fragment -->
+    <string name="account_label">Account</string>
+
+    <!-- global_setting -->
+    <string name="setting_label">Settings</string>
+    <string name="setting_action_bar_title">Settings</string>
+    <string name="language_and_captions_title">Language and captions</string>
+    <string name="audio_language_title">Audio language</string>
+    <string name="audio_language_summary">The video\'s original language</string>
+    <string name="caption_setting_title">Caption settings</string>
+    <string name="caption_setting_summary">Set preferences for closed captions</string>
+    <string name="playback_title">Playback</string>
+    <string name="parental_control_title">Parental controls</string>
+    <string name="parental_control_summary">Show all</string>
+    <string name="info_card_title">Enable Info Cards</string>
+    <string name="info_card_summary">Show information about the actors and songs featured at the current position in the video</string>
+    <string name="binge_watching_title">Enable binge-watching</string>
+    <string name="binge_watching_summary">Automatically play the next episode in your library</string>
+    <string name="notification_category_title">Get notifications</string>
+    <string name="watchlist_title">About watchlist</string>
+    <string name="watchlist_summary">When content from your watchlist becomes available or drops in price</string>
+    <string name="reward_title">About rewards</string>
+    <string name="reward_summary">When your rewards are about to expire</string>
+    <string name="play_movie_and_tv_category_title">Use Play Movies &amp; TV on another devices</string>
+    <string name="setting_up_title">Finish setting up a Roku or smart TV</string>
+    <string name="setting_up_summary">Start setup on your TV, then finish here</string>
+    <string name="streaming_category_title">Streaming on mobile networks</string>
+    <string name="warning_title">Show warning</string>
+    <string name="warning_summary">Displays a warning before streaming over a mobile network</string>
+    <string name="restrict_quality_title">Restrict quality</string>
+    <string name="restrict_quality_summary">Limits quality to SD when streaming over a mobile network (uses less data)</string>
+    <string name="download_category_title">Downloads</string>
+    <string name="manage_download_title">Manage downloads</string>
+    <string name="manage_download_summary">Free up space and view downloads in progress</string>
+    <string name="network_title">Network</string>
+    <string name="network_summary">Download only on Wi-Fi</string>
+    <string name="quality_title">Quality</string>
+    <string name="quality_summary">HD</string>
+    <string name="storage_title">Storage</string>
+    <string name="storage_summary">Internal storage</string>
+    <string name="origin_language_label">The video\'s original language</string>
+    <string name="english_language_label">English (United States), when available</string>
+    <string name="origin_language_value">origin language</string>
+    <string name="english_language_value">english language</string>
+    <string name="wifi_network_label">Download only on Wi-Fi</string>
+    <string name="any_network_label">Download only on any network</string>
+    <string name="wifi_network_value">Wi-Fi</string>
+    <string name="any_network_value">any network</string>
+    <string name="hd_quality_label">HD (Better quality)</string>
+    <string name="sd_quality_label">SD (Faster, save space)</string>
+    <string name="hd_quality_value">hd</string>
+    <string name="sd_quality_value">sd</string>
+
+    <!-- Caption setting fragment -->
+    <string name="caption_setting_label">Caption</string>
+    <string name="use_caption_title">Use captions</string>
+    <string name="standard_option_title">Standard options</string>
+    <string name="caption_language_title">Language</string>
+    <string name="default_caption_language_label">Default</string>
+    <string name="english_caption_language_label">English</string>
+    <string name="vietnam_caption_language_label">Vietnam</string>
+    <string name="default_caption_language_value">Default</string>
+    <string name="english_caption_language_value">English</string>
+    <string name="vietnam_caption_language_value">Vietnam</string>
+    <string name="caption_text_size_title">Text size</string>
+    <string name="very_small_text_label">Very small</string>
+    <string name="small_text_label">Small</string>
+    <string name="normal_text_label">Normal</string>
+    <string name="large_text_label">Large</string>
+    <string name="very_large_text_label">Very large</string>
+    <string name="very_small_text_value">Very small</string>
+    <string name="small_text_value">Small</string>
+    <string name="normal_text_value">Normal</string>
+    <string name="large_text_value">Large</string>
+    <string name="very_large_text_value">Very large</string>
+
+    <!-- categoryMovie option -->
+    <string name="movie_option_like_like">Show more like this</string>
+    <string name="movie_option_unlike_like">Show fewer like this</string>
+    <string name="add_to_watchlist_text">Add to watchlist</string>
+
+    <!-- movie detail activity -->
+    <string name="movie_detail_activity_label">Movie detail</string>
+
+    <!-- movie detail fragment -->
+    <string name="movie_detail_fragment_label">Movie detail</string>
+    <string name="similar_movies">Similar movies</string>
+    <string name="recommendation">Recommendation</string>
+</resources>

@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+
+androidExtensions {
+    experimental = true
+}
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.sunmoviedb"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "API_KEY", "\"${API_KEY}\""
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation deps.kotlin.stdlib
+    implementation deps.support.appcompat
+    implementation deps.support.core_ktx
+    implementation deps.support.core
+    implementation deps.constraint_layout
+    implementation deps.support.v4
+    implementation deps.support.material
+    implementation deps.core_ktx
+    // Lifecycle
+    implementation deps.lifecycle.extensions
+    // Navigation
+    implementation deps.navigation.fragment
+    implementation deps.navigation.ui
+    // Paging
+    implementation deps.paging.runtime
+    // Rx
+    implementation deps.rx.java
+    implementation deps.rx.android
+    // Retrofit
+    implementation deps.retrofit.runtime
+    implementation deps.retrofit.converter
+    implementation deps.retrofit.adapter
+    // Okhttp
+    implementation deps.okhttp.logging_interceptor
+    // Koin
+    implementation deps.koin.runtime
+    implementation deps.koin.scope
+    implementation deps.koin.viewmodel
+    // glide
+    implementation deps.glide.runtime
+    kapt deps.glide.compiler
+    // preference
+    implementation deps.preference
+    testImplementation deps.test.junit
+    androidTestImplementation deps.test.runner
+    androidTestImplementation deps.test.espresso
+}

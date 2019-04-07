@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:key="language_and_captions_category"
+        android:title="@string/language_and_captions_title"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:defaultValue="@string/origin_language_value"
+            android:entries="@array/audio_language_entries"
+            android:entryValues="@array/audio_language_entry_values"
+            android:key="pref_audio_language_key"
+            android:summary="@string/audio_language_summary"
+            android:title="@string/audio_language_title"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+
+        <Preference
+            android:key="pref_caption_setting_key"
+            android:summary="@string/caption_setting_summary"
+            android:title="@string/caption_setting_title"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="playback_category"
+        android:title="@string/playback_title"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="parental_controls"
+            android:summary="@string/parental_control_summary"
+            android:title="@string/parental_control_title"
+            app:iconSpaceReserved="false" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="info_card"
+            android:summary="@string/info_card_summary"
+            android:title="@string/info_card_title"
+            app:iconSpaceReserved="false" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="binge_watching"
+            android:summary="@string/binge_watching_summary"
+            android:title="@string/binge_watching_title"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="notification_category"
+        android:title="@string/notification_category_title"
+        app:iconSpaceReserved="false">
+
+        <CheckBoxPreference
+            android:key="watchlist"
+            android:summary="@string/watchlist_summary"
+            android:title="@string/watchlist_title"
+            app:iconSpaceReserved="false" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="reward"
+            android:summary="@string/reward_summary"
+            android:title="@string/reward_title"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="play_movie_and_tv_category"
+        android:title="@string/play_movie_and_tv_category_title"
+        app:iconSpaceReserved="false">
+
+        <!--TODO: start Fragment like Google CategoryMovie app-->
+        <Preference
+            android:key="setting_up"
+            android:summary="@string/setting_up_summary"
+            android:title="@string/setting_up_title"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="streaming_category"
+        android:title="@string/streaming_category_title"
+        app:iconSpaceReserved="false">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="warning"
+            android:summary="@string/warning_summary"
+            android:title="@string/warning_title"
+            app:iconSpaceReserved="false" />
+
+        <CheckBoxPreference
+            android:key="restrict_quality"
+            android:summary="@string/restrict_quality_summary"
+            android:title="@string/restrict_quality_title"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="download_category"
+        android:title="@string/download_category_title"
+        app:iconSpaceReserved="false">
+
+        <!--TODO: start Manage download fragment like Google CategoryMovie app-->
+        <Preference
+            android:key="manage_download"
+            android:summary="@string/manage_download_summary"
+            android:title="@string/manage_download_title"
+            app:iconSpaceReserved="false" />
+
+        <ListPreference
+            android:defaultValue="@string/wifi_network_value"
+            android:entries="@array/network_entries"
+            android:entryValues="@array/network_entry_values"
+            android:key="network"
+            android:summary="@string/network_summary"
+            android:title="@string/network_title"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:defaultValue="@string/hd_quality_value"
+            android:entries="@array/quality_entries"
+            android:entryValues="@array/quality_entry_values"
+            android:key="storage"
+            android:summary="@string/quality_summary"
+            android:title="@string/quality_title"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+
+        <!--<ListPreference-->
+        <!--android:key="storage"-->
+
+    </PreferenceCategory>
+</PreferenceScreen>

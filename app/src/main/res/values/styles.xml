@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="MainTheme" parent="AppTheme" />
+
+    <style name="SettingTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MovieDetailTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">#2E2E2E</item>
+    </style>
+
+    <style name="MovieDetailTitleTextStyle">
+        <item name="color">@android:color/white</item>
+    </style>
+</resources>

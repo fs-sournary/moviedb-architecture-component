@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.example.sunmoviedb.data.CategoryMovie" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="listener"
+            type="com.example.sunmoviedb.ui.home.CategoryMovieListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onLongClick="@{() -> listener.onItemLongClicked(item)}">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/thumbnail_image_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/dp_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/thumbnail_image"
+                android:layout_width="@dimen/dp_124"
+                android:layout_height="@dimen/dp_148"
+                android:onClick="@{(v) -> listener.onItemClicked(v, item.id)}"
+                android:scaleType="centerCrop"
+                app:urlImage="@{item.posterPath}"
+                tools:src="@drawable/ic_launcher_background" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:lines="2"
+            android:text="@{item.title}"
+            android:textSize="@dimen/sp_13"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/thumbnail_image_card"
+            app:layout_constraintStart_toStartOf="@id/thumbnail_image_card"
+            app:layout_constraintTop_toBottomOf="@id/thumbnail_image_card"
+            tools:text="Way to go" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/vote_average_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:includeFontPadding="false"
+            android:text="@{String.valueOf(item.voteAverage)}"
+            android:textSize="@dimen/sp_11"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_text"
+            tools:text="8.6" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:layout_marginStart="@dimen/dp_4"
+            android:src="@drawable/ic_star_red_24dp"
+            app:layout_constraintBottom_toBottomOf="@id/vote_average_text"
+            app:layout_constraintStart_toEndOf="@id/vote_average_text"
+            app:layout_constraintTop_toTopOf="@id/vote_average_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
